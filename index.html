@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FE Architecture</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+        <link rel="stylesheet" type="text/css" href="architecture.css">
+    </head>
+    <body>
+        <div id="main">
+            <!-- header starts -->
+            <section class="header">
+                <h1>Front End Architecture</h1>
+            </section>
+            <!-- header ends -->
+
+            <!-- content starts -->
+            <div class='content'>
+                <p id="note">Click on App/ Module to expand or collapse</p>
+                <div>
+                    <div class="container">
+                        <span id='tree'></span>
+                        <aside>
+                            <ul>
+                                <li>
+                                    <span></span>
+                                    <span>App</span>
+                                </li>
+                                <li>
+                                    <span id="module-legend"></span>
+                                    <span>Module</span>
+                                </li>
+                                <li>
+                                    <span id="component-legend"></span>
+                                    <span>Component</span>
+                                </li>
+                                <li>
+                                    <span id="files-legend"></span>
+                                    <span>Files</span>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <!-- content ends --> 
+        </div>
+        <!-- footer starts -->
+        <div class="footer">
+          Copyright © 2016 ServicePower
+          <span class="footer-space">|</span> All Rights Reserved.
+        </div>
+        <!-- footers ends -->
+        <script src="libs/jquery.min.js"></script>
+        <script src="libs/d3.min.js"></script>
+        <script type="text/javascript" src="data.js"></script>
+       <script type="text/javascript" src="architecture.js"></script>
+    </body>
+</html>
